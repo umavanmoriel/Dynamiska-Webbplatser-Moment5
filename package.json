@@ -1,0 +1,18 @@
+{
+  "name": "dynamiska-webbplatser-moment5",
+  "version": "1.0.0",
+  "source": "src/pages/*.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.16.3",
+    "parcel": "^2.16.3",
+    "sharp": "0.33.5",
+    "svgo": "^3.3.2"
+  }
+}

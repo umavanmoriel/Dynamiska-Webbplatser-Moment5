@@ -1,0 +1,263 @@
+@use 'base';
+@use 'component';
+@use 'reset';
+@use 'layout';
+@use 'animering';
+
+
+
+@include base.responsive-layout("large") {
+    
+    header {
+        background-color: base.$darker-background-color;
+        padding: 0px 200px;
+    }
+
+    .header-style-desktop {
+        font-family: base.$heading-font;
+        font-size: base.$font-size-nav-desktop;
+        font-weight: base.$font-weight-h;
+        line-height: base.$line-height-h;
+        color: base.$font-color-light;
+    }
+
+    .header-list {
+        gap: 5px;
+        @extend .header-style-desktop;
+    }
+
+    
+    
+    .dropdown-menu.show {
+        background-color: base.$meny-color;
+        @extend .header-style-desktop;
+    }
+        
+    
+    .menu-heading {
+        @extend .header-style-desktop;
+    }
+    
+
+
+    main {
+        gap: 40px;
+        padding: 100px 200px;
+
+        .heading-style-desktop {
+            font-weight: base.$font-weight-h;
+            line-height: base.$line-height-h;
+            text-align: center;
+            font-family: base.$heading-font;
+        }
+
+        h1 {
+            font-size: base.$font-size-h1-desktop;
+            @extend .heading-style-desktop;
+        }
+
+        h2 {
+            font-size: base.$font-size-h2-desktop;
+            @extend .heading-style-desktop;
+        }
+        
+        p { 
+            text-align: center;
+            font-family: base.$paragraph-font;
+            font-size: base.$font-size-p-desktop;
+            font-weight: base.$font-weight-p;
+            line-height: base.$line-height-p;
+        }
+    }
+
+    footer {
+        background-color: base.$darker-background-color;
+        height: 200px;
+
+        ul {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+        }
+
+        li {
+            font-size: base.$font-size-nav-desktop;
+            color: base.$font-color-light;
+            @extend .heading-style-desktop;
+        }
+    }
+
+}
+
+@include base.responsive-layout("medium") {
+    
+    header {
+        background-color: base.$darker-background-color;
+        padding: 0px 50px;
+    }
+
+    .header-style-ipad {
+        font-family: base.$heading-font;
+        font-size: base.$font-size-nav-ipad;
+        font-weight: base.$font-weight-h;
+        line-height: base.$line-height-h;
+        color: base.$font-color-light;
+    }
+
+    .header-list {
+        gap: 60px;
+        @extend .header-style-ipad;
+    }
+
+    
+    .dropdown-menu.show {
+        background-color: base.$meny-color;
+        @extend .header-style-ipad;
+    }
+    
+
+    .menu-heading {
+        @extend .header-style-ipad;
+    }
+        
+    main {
+        gap: 40px;
+        padding: 100px;
+
+        .heading-style-ipad {
+            font-weight: base.$font-weight-h;
+            line-height: base.$line-height-h;
+            text-align: center;
+            font-family: base.$heading-font;
+        }
+
+        h1 {
+            font-size: base.$font-size-h1-ipad;
+            @extend .heading-style-ipad;
+        }
+
+        h2 {
+            font-size: base.$font-size-h2-ipad;
+            @extend .heading-style-ipad;
+        }
+        
+        p {
+            text-align: center;
+            font-family: base.$paragraph-font;
+            font-size: base.$font-size-p-ipad;
+            font-weight: base.$font-weight-p;
+            line-height: base.$line-height-p;
+        }
+
+        img {
+            height: 300px;
+        }
+    
+    }
+
+    footer {
+        background-color: base.$darker-background-color;
+        height: 200px;
+
+        ul {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+        }
+
+        li {
+            font-size: base.$font-size-nav-phone;
+            color: base.$font-color-light;
+            @extend .heading-style-ipad;
+        }
+    }
+
+    
+}
+
+@include base.responsive-layout("small") {
+    header {
+        background-color: base.$darker-background-color;
+        padding: 0px 30px;
+    }
+
+    .header-style-iphone {
+        font-family: base.$heading-font;
+        font-size: base.$font-size-nav-phone;
+        font-weight: base.$font-weight-h;
+        line-height: base.$line-height-h;
+        color: base.$font-color-light;
+    }
+
+    .header-list {
+        gap: 10px;
+        @extend .header-style-iphone;
+    }
+
+ 
+    .dropdown-menu.show {
+        right: 0%;
+        background-color: base.$meny-color;
+        @extend .header-style-iphone;
+    }
+    
+
+    .menu-heading {
+        display: none;
+    }
+
+    
+    main {
+        gap: 40px;
+        padding: 50px;
+
+        .heading-style-iphone {
+            font-weight: base.$font-weight-h;
+            line-height: base.$line-height-h;
+            text-align: center;
+            font-family: base.$heading-font;
+        }
+
+        h1 {
+            font-size: base.$font-size-h1-phone;
+            @extend .heading-style-iphone;
+        }
+
+        h2 {
+            font-size: base.$font-size-h2-phone;
+            @extend .heading-style-iphone;
+        }
+        
+        p {
+            text-align: center;
+            font-family: base.$paragraph-font;
+            font-size: base.$font-size-p-phone;
+            font-weight: base.$font-weight-p;
+            line-height: base.$line-height-p;
+        }
+    
+    }
+
+    img {
+        height: 250px;
+    }
+    
+    footer {
+        background-color:base.$darker-background-color;
+        height: 200px;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        li {
+            font-size: base.$font-size-nav-phone;
+            color: base.$font-color-light;
+            @extend .heading-style-iphone;
+        }
+    }
+
+}

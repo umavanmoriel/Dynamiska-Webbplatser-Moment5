@@ -1,0 +1,81 @@
+$background-color-dark: #000033;
+$background-color-light: white;
+
+$font-color-light: white;
+$font-color-dark: #000033;
+
+body {
+  background-color: $background-color-dark;
+  color: $font-color-light;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+      background-color: $background-color-light;
+      color: $font-color-dark;
+  }
+}
+
+
+
+a {
+  color: $font-color-light;
+}
+
+
+$meny-color: #0000ff;
+
+$light-meny-color: lighten($meny-color, 10%);
+
+$darker-background-color: darken($background-color-dark, 5%);
+
+
+$heading-font: 'Roboto', Arial;
+$paragraph-font:'Merriweather', sans-serif;
+
+$font-size-h1-desktop: 36px;
+$font-size-h2-desktop: 28px;
+$font-size-p-desktop: 22px;
+
+$font-size-h1-ipad: 32px;
+$font-size-h2-ipad: 26px;
+$font-size-p-ipad: 20px;
+
+$font-size-h1-phone: 26px;
+$font-size-h2-phone: 20px;
+$font-size-p-phone: 18px;
+
+$font-size-nav-desktop: 28px;
+$font-size-nav-ipad: 22px;
+$font-size-nav-phone: 18px;
+
+$line-height-h: 36px;
+$line-height-p: 38px;
+
+$font-weight-h: 700;
+$font-weight-p: 400;
+
+
+
+//Mixin för olika responsive layout 
+
+@mixin responsive-layout($breakpoint) {
+    @if $breakpoint == small {
+      @media (max-width: 500px) {
+        @content;
+      }
+    } @else if $breakpoint == medium {
+      @media (min-width: 500) and (max-width: 900px) {
+        @content;
+      }
+    } @else if $breakpoint == large {
+      @media (min-width: 900px) {
+        @content;
+      }
+    } @else {
+      @warn "Ingen matchande breakpoint för #{$breakpoint} hittades.";
+    }
+}
+
