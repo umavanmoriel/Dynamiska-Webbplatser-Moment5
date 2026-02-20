@@ -4,6 +4,7 @@
     <title>Diagram</title>
     <link rel="stylesheet" href="/animering.2e8c441c.css">
     <script src="/animering.af28e226.js" type="module"></script>
+    <script src="/diagram.e61f5452.js" type="module"></script>
 </head>
 <body>
     <header>
@@ -32,7 +33,10 @@
     <main>
         <h1>Diagram</h1>
         <h2>Statistik över de 6 mest sökta kurserna på Mittuniverstetet, HT24</h2>
+        <canvas id="diagram" class="stapeldiagram" width="400" height="300"></canvas>
         <h2>Statistik över de 5 mest sökta programmen på Mittuniverstetet, HT24</h2>
+        <canvas id="piediagram" class="cirkeldiagram"></canvas>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     </main>
     <footer>
         <nav>
