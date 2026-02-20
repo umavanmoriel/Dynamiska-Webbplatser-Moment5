@@ -75,6 +75,13 @@
         height: 300px;
     }
 
+    .main-diagram{
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        padding: 100px 200px;
+    }
+
     footer {
         background-color: base.$darker-background-color;
         height: 200px;
@@ -158,6 +165,13 @@
             height: 300px;
         }
     
+    }
+    
+    .main-diagram {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        padding: 100px;
     }
 
     footer {
@@ -265,4 +279,16 @@
         }
     }
 
+    .main-diagram{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        padding: 50px;
+    }
+
+    .moon-animation {
+        width: 70px;
+        height: auto;
+    }        
 }

@@ -211,7 +211,7 @@ footer {
   animation-play-state: running;
 }
 
-@media (width >= 900px) {
+@media (width >= 1000px) {
   header {
     background-color: #00001a;
     padding: 0 200px;
@@ -266,6 +266,13 @@ footer {
     height: 300px;
   }
 
+  .main-diagram {
+    flex-direction: column;
+    gap: 80px;
+    padding: 100px 200px;
+    display: flex;
+  }
+
   footer {
     background-color: #00001a;
     height: 200px;
@@ -283,7 +290,7 @@ footer {
   }
 }
 
-@media (width >= 500px) and (width <= 900px) {
+@media (width >= 500px) and (width <= 1000px) {
   header {
     background-color: #00001a;
     padding: 0 50px;
@@ -335,6 +342,13 @@ footer {
 
   main img {
     height: 300px;
+  }
+
+  .main-diagram {
+    flex-direction: column;
+    gap: 80px;
+    padding: 100px;
+    display: flex;
   }
 
   footer {
@@ -428,6 +442,19 @@ footer {
   footer li {
     color: #fff;
     font-size: 18px;
+  }
+
+  .main-diagram {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+    display: flex;
+  }
+
+  .moon-animation {
+    width: 70px;
+    height: auto;
   }
 }
 /*# sourceMappingURL=animering.2e8c441c.css.map */

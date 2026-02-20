@@ -67,11 +67,11 @@ $font-weight-p: 400;
         @content;
       }
     } @else if $breakpoint == medium {
-      @media (min-width: 500) and (max-width: 900px) {
+      @media (min-width: 500) and (max-width: 1000px) {
         @content;
       }
     } @else if $breakpoint == large {
-      @media (min-width: 900px) {
+      @media (min-width: 1000px) {
         @content;
       }
     } @else {
