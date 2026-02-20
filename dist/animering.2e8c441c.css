@@ -17,6 +17,50 @@ a {
   color: #fff;
 }
 
+#search-input {
+  text-align: center;
+  background-color: #dfdff9;
+  border: 1px solid #dfdff9;
+  border-radius: 10px;
+  width: 200px;
+  height: 10px;
+  padding: 10px 0;
+  font-family: Roboto, Arial;
+  font-size: 16px;
+}
+
+#search-button {
+  background-color: #dfdff9;
+  border: 1px solid #dfdff9;
+  border-radius: 10px;
+  width: 200px;
+  height: 33px;
+  font-family: Roboto, Arial;
+  font-size: 16px;
+}
+
+.controls {
+  gap: 20px;
+  display: flex;
+}
+
+@media (width <= 500px) {
+  #search-input {
+    width: 160px;
+    height: 20px;
+  }
+
+  #search-button {
+    width: 160px;
+    height: 43px;
+  }
+
+  .controls {
+    gap: 10px;
+    display: flex;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -28,6 +72,11 @@ a {
 
 li {
   list-style: none;
+}
+
+body {
+  box-sizing: border-box;
+  min-height: 100vh;
 }
 
 main {
@@ -267,7 +316,7 @@ footer {
   }
 
   #map {
-    width: 500px;
+    width: 700px;
     height: 320px;
   }
 
@@ -354,6 +403,11 @@ footer {
     gap: 80px;
     padding: 100px;
     display: flex;
+  }
+
+  #map {
+    width: 400px;
+    height: 320px;
   }
 
   footer {
@@ -460,6 +514,11 @@ footer {
   .moon-animation {
     width: 70px;
     height: auto;
+  }
+
+  #map {
+    width: 250px;
+    height: 300px;
   }
 }
 /*# sourceMappingURL=animering.2e8c441c.css.map */

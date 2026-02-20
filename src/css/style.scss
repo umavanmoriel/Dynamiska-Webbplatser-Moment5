@@ -77,7 +77,7 @@
 
     #map {
         height: 320px;
-        width: 500px;
+        width: 700px;
     }
 
     .main-diagram{
@@ -177,6 +177,11 @@
         flex-direction: column;
         gap: 80px;
         padding: 100px;
+    }
+
+    #map {
+        height: 320px;
+        width: 400px;
     }
 
     footer {
@@ -295,5 +300,10 @@
     .moon-animation {
         width: 70px;
         height: auto;
-    }        
+    }
+    
+    #map {
+        height: 300px;
+        width: 250px;
+    }
 }

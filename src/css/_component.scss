@@ -1,4 +1,48 @@
+@use 'base';
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+#search-input {
+    height: 10px;
+    width: 200px;
+    background-color: #dfdff9;
+    padding: 10px 0px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: base.$heading-font;
+    border: 1px solid #dfdff9;
+    text-align: center;
+}
+
+#search-button {
+    height: 33px;
+    width: 200px;
+    border-radius: 10px;
+    border-color: #dfdff9;
+    font-size: 16px;
+    font-family: base.$heading-font;
+    background-color: #dfdff9;
+    border: 1px solid #dfdff9;
+}
+
+.controls {
+    display: flex;
+    gap: 20px;
+}
 
 
+@include base.responsive-layout("small") {
+    #search-input {
+        height: 20px;
+        width: 160px;
+    }
+
+    #search-button {
+        height: 43px;
+        width: 160px;
+    }
+
+    .controls {
+        display: flex;
+        gap: 10px;
+    }
+}
