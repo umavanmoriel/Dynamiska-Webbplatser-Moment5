@@ -266,6 +266,11 @@ footer {
     height: 300px;
   }
 
+  #map {
+    width: 500px;
+    height: 320px;
+  }
+
   .main-diagram {
     flex-direction: column;
     gap: 80px;
