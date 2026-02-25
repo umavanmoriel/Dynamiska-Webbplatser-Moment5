@@ -6,3 +6,5 @@
 * Dokumentera JavaScript-koden med **JSDoc**, samt generera dokumentation utifrån detta
 * Kunna använda SASS för att underlätta utveckling med CSS
 * Praktiskt använda utvecklings-miljön du skapade i tidigare moment
+
+Länk till publicerad webbplats: [Moment-5-Dynamiska-Webbplatser] (https://dynamiska-webbplatser-moment5.netlify.app/diagram)
