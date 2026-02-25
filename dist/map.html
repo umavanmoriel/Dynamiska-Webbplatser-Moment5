@@ -1,34 +1,42 @@
-<!DOCTYPE html><html lang=en><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1.0"><title>Karta</title><link rel=stylesheet href=/animering.2c601108.css><script src=/animering.83413b7e.js type=module></script><script src=/map.9d104b80.js type=module></script><body>
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karta</title>
+    <link rel="stylesheet" href="/animering.2e8c441c.css">
+    <script src="/animering.af28e226.js" type="module"></script>
+    <script src="/map.9129d424.js" type="module"></script>
+</head>
+<body>
     <header>
-        <nav class=header-nav>
-            <ul class=header-list>
-                <li><a href=/index.html>Startsida</a></li>
-                <li><a href=/index.html><img class=moon-animation src=/moon.93502350.png alt></a></li>
+        <nav class="header-nav">
+            <ul class="header-list">
+                <li><a href="/index.html">Startsida</a></li>
+                <li><a href="/index.html"><img class="moon-animation" src="/moon.6959b093.png" alt=""></a></li>
             </ul>
         </nav>
-        <div class=menu-container>
-            <div id=menu class=menu>
-                <img class=menu-icon src=/menu-icon.2185a428.svg alt="Meny ikon" width=40 height=40>
-                <span class=menu-heading>Meny</span>
+        <div class="menu-container">
+            <div id="menu" class="menu">
+                <img class="menu-icon" src="/menu-icon.95dc81bb.svg" alt="Meny ikon" width="40" height="40">
+                <span class="menu-heading">Meny</span>
             </div>
-            <div class=dropdown-menu id=dropdown-menu>
-                <ul class=menu-list>
-                    <li><a href=/animering.html>Animeringar</a></li>
-                    <li><a href=/sass.html>SASS</a></li>
-                    <li><a href=/copyright.html>Copyright</a></li>
-                    <li><a href=/diagram.html>Diagram</a></li>
-                    <li><a href=/map.html>Karta</a></li>
+            <div class="dropdown-menu" id="dropdown-menu">
+                <ul class="menu-list">
+                    <li><a href="/animering.html">Animeringar</a></li>
+                    <li><a href="/sass.html">SASS</a></li>
+                    <li><a href="/copyright.html">Copyright</a></li>
+                    <li><a href="/diagram.html">Diagram</a></li>
+                    <li><a href="/map.html">Karta</a></li>
                 </ul>
             </div>
         </div>
     </header>
-    <main class=main-map>
+    <main class="main-map">
         <h1>Karta</h1>
-        <div class=controls>
-            <input id=search-input placeholder="Sök platser...">
-            <button id=search-button>Sök</button>
+        <div class="controls">
+            <input id="search-input" type="text" placeholder="Sök platser...">
+            <button id="search-button">Sök</button>
         </div>
-        <div id=map></div>
+        <div id="map"></div>
     </main>
     <footer>
         <nav>
@@ -40,5 +48,28 @@
             </ul>
         </nav>
     </footer>
-    <script>(e=>{var a,o,r,n="The Google Maps JavaScript API",s="google",c="importLibrary",t="__ib__",p=document,i=window,l=(i=i[s]||(i[s]={})).maps||(i.maps={}),m=new Set,d=new URLSearchParams;l[c]?console.warn(n+" only loads once. Ignoring:",e):l[c]=(i,...w)=>m.add(i)&&(a||(a=new Promise(async(c,i)=>{for(r in await (o=p.createElement("script")),d.set("libraries",[...m]+""),e)d.set(r.replace(/[A-Z]/g,e=>"_"+e[0].toLowerCase()),e[r]);d.set("callback",s+".maps."+t),o.src=`https://maps.${s}apis.com/maps/api/js?`+d,l[t]=c,o.onerror=()=>a=i(Error(n+" could not load.")),o.nonce=p.querySelector("script[nonce]")?.nonce||"",p.head.append(o)}))).then(()=>l[c](i,...w))})({key:"AIzaSyCWtH62SEG1nVhgubK6yAlsK-vpzpUdJIY",v:"weekly"});</script>
+    <script>((g)=>{
+    var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window;
+    b = b[c] || (b[c] = {});
+    var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = ()=>h || (h = new Promise(async (f, n)=>{
+            await (a = m.createElement("script"));
+            e.set("libraries", [
+                ...r
+            ] + "");
+            for(k in g)e.set(k.replace(/[A-Z]/g, (t)=>"_" + t[0].toLowerCase()), g[k]);
+            e.set("callback", c + ".maps." + q);
+            a.src = `https://maps.${c}apis.com/maps/api/js?` + e;
+            d[q] = f;
+            a.onerror = ()=>h = n(Error(p + " could not load."));
+            a.nonce = m.querySelector("script[nonce]")?.nonce || "";
+            m.head.append(a);
+        }));
+    d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n)=>r.add(f) && u().then(()=>d[l](f, ...n));
+})({
+    key: "AIzaSyCWtH62SEG1nVhgubK6yAlsK-vpzpUdJIY",
+    v: "weekly"
+});
 
+</script>
+
+</body></html>

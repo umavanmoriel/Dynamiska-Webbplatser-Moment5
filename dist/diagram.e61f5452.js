@@ -781,6 +781,19 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
             scales: {
                 y: {
                     beginAtZero: true
+                },
+                x: {
+                    ticks: {
+                        callback: function(value, index) {
+                            const label = this.getLabelForValue(index);
+                            const maxLength = 15;
+                            if (label.length > maxLength) return label.match(/.{1,15}/g).map((segment, i, arr)=>{
+                                if (i < arr.length - 1 && !segment.endsWith(' ') && !arr[i + 1].startsWith(' ')) return segment.trimEnd() + '-';
+                                return segment.trim();
+                            });
+                            return label;
+                        }
+                    }
                 }
             }
         }
