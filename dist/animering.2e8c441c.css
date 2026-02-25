@@ -310,9 +310,20 @@ footer {
     line-height: 38px;
   }
 
-  .stapeldiagram {
-    width: 400px;
-    height: 300px;
+  .diagram-container {
+    box-sizing: border-box;
+    justify-content: center;
+    width: 700px;
+    height: 600px;
+    display: flex;
+  }
+
+  .cirkeldiagram-container {
+    box-sizing: border-box;
+    justify-content: center;
+    width: 700px;
+    height: 700px;
+    display: flex;
   }
 
   #map {
@@ -325,6 +336,10 @@ footer {
     gap: 80px;
     padding: 100px 200px;
     display: flex;
+  }
+
+  .main-map {
+    padding: 100px 200px;
   }
 
   footer {
@@ -405,9 +420,29 @@ footer {
     display: flex;
   }
 
+  .main-map {
+    padding: 100px 50px 200px;
+  }
+
+  .diagram-container {
+    box-sizing: border-box;
+    justify-content: center;
+    width: 500px;
+    height: 400px;
+    display: flex;
+  }
+
+  .cirkeldiagram-container {
+    box-sizing: border-box;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+    display: flex;
+  }
+
   #map {
     width: 400px;
-    height: 320px;
+    height: 500px;
   }
 
   footer {
@@ -503,6 +538,26 @@ footer {
     font-size: 18px;
   }
 
+  .diagram-container {
+    box-sizing: border-box;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    display: flex;
+  }
+
+  .main-map {
+    padding: 100px 50px 150px;
+  }
+
+  .cirkeldiagram-container {
+    box-sizing: border-box;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    display: flex;
+  }
+
   .main-diagram {
     flex-direction: column;
     align-items: center;
@@ -517,8 +572,8 @@ footer {
   }
 
   #map {
-    width: 250px;
-    height: 300px;
+    width: 300px;
+    height: 400px;
   }
 }
 /*# sourceMappingURL=animering.2e8c441c.css.map */

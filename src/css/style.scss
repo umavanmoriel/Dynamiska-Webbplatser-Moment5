@@ -70,9 +70,21 @@
         }
     }
 
-    .stapeldiagram {
-        width: 400px;
-        height: 300px;
+
+    .diagram-container{
+        width: 700px;
+        height: 600px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+    }
+
+    .cirkeldiagram-container{
+        width: 700px;
+        height: 700px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
     }
 
     #map {
@@ -85,6 +97,10 @@
         flex-direction: column;
         gap: 80px;
         padding: 100px 200px;
+    }
+
+    .main-map {
+        padding: 100px 200px ;
     }
 
     footer {
@@ -179,8 +195,28 @@
         padding: 100px;
     }
 
+    .main-map {
+        padding: 100px 50px 200px 50px;;
+    }
+
+    .diagram-container{
+        width: 500px;
+        height: 400px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+    }
+
+    .cirkeldiagram-container{
+        width: 500px;
+        height: 500px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+    }
+
     #map {
-        height: 320px;
+        height: 500px;
         width: 400px;
     }
 
@@ -289,6 +325,27 @@
         }
     }
 
+    .diagram-container{
+        width: 300px;
+        height: 300px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+    }
+
+    
+    .main-map {
+        padding: 100px 50px 150px 50px;;
+    }
+
+    .cirkeldiagram-container{
+        width: 300px;
+        height: 300px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+    }
+
     .main-diagram{
         display: flex;
         flex-direction: column;
@@ -303,7 +360,7 @@
     }
     
     #map {
-        height: 300px;
-        width: 250px;
+        height: 400px;
+        width: 300px;
     }
 }

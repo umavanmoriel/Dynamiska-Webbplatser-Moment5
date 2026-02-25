@@ -714,10 +714,19 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 }
 
 },{}],"cb1CS":[function(require,module,exports,__globalThis) {
-const searchButton = document.getElementById("search-button");
-const searchInput = document.getElementById("search-input");
+/** 
+ * Söker element från DOM med id "search-button"
+ * @type {HTMLButtonElement}
+*/ const searchButton = document.getElementById("search-button");
+/** 
+ * Söker input från DOM med id "search-input"
+ * @type {HTMLInputElement}
+*/ const searchInput = document.getElementById("search-input");
 let map;
-async function initMap() {
+/** 
+ * Skapar och initialiserar google karta 
+ * @return {Promise<void>} - returnerar ingenting
+*/ async function initMap() {
     const { Map } = await google.maps.importLibrary("maps");
     map = new Map(document.getElementById("map"), {
         center: {
@@ -728,7 +737,10 @@ async function initMap() {
         mapId: 'c7ea869d36540ad0fb7af91f'
     });
 }
-async function findPlaces() {
+/** 
+ * Söker plats med google karta när man skriver namnet i input fält 
+ * @return {Promise<void>} - uppdaterar kartat och visar plats med markör
+*/ async function findPlaces() {
     const { Place } = await google.maps.importLibrary("places");
     const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
     const textQuery = searchInput.value;
@@ -759,8 +771,12 @@ async function findPlaces() {
         });
     } else console.log('No results');
 }
-initMap();
-searchButton.addEventListener('click', findPlaces);
+/** 
+ * Startar google karta när sidan uppdateras 
+*/ initMap();
+/** 
+ * Anropar funktionen findPlaces när man klickar på knappen searchButton 
+*/ searchButton.addEventListener('click', findPlaces);
 
 },{}]},["84T9G","cb1CS"], "cb1CS", "parcelRequire904b", {})
 
